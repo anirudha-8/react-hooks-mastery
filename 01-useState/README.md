@@ -119,7 +119,7 @@ export default App;
 1. Navigate to the `useState` folder.
 
     ```sh
-        cd useState
+        cd 01-useState
     ```
 
 2. Install dependencies (if not installed already).
