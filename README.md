@@ -20,9 +20,7 @@ Welcome to my **React Hooks Journey** repository! 🚀 This repository documents
 
 - [`useState`](./01-useState/) – Manage state in functional components.
 
-- [`useEffect`](./useEffect) – Handle side effects like fetching data or DOM updates.
-
-- [`useLayoutEffect vs useEffect`](./useLayoutEffect-vs-useEffect) – Understand when to use each hook.
+- [`useEffect`](./02-useEffect/) – Handle side effects like fetching data or DOM updates.
 
 - [`useRef`](./useRef) – Access DOM elements or persist values without re-rendering.
 
