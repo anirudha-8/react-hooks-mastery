@@ -18,7 +18,7 @@ Welcome to my **React Hooks Journey** repository! 🚀 This repository documents
 
 ### 🔹 Fundamental Hooks
 
-- [`useState`](./useState) – Manage state in functional components.
+- [`useState`](./01-useState/) – Manage state in functional components.
 
 - [`useEffect`](./useEffect) – Handle side effects like fetching data or DOM updates.
 
