@@ -1,8 +1,2 @@
-
-function App() {
-
-  return (
-  )
-}
-
-export default App
+function App() {}
+export default App;
