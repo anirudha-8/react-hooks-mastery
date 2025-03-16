@@ -1,9 +1,33 @@
-dark-theme {
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1 {
+	margin-bottom: 1rem;
+}
+
+.dark-theme {
 	background-color: #333;
 	color: #eee;
 }
 
-light-theme {
+.light-theme {
 	background-color: #eee;
 	color: #333;
+}
+
+.dark-theme,
+.light-theme {
+	width: 100%;
+	height: 100vh;
+	padding: 1rem;
+}
+
+button {
+	padding: 0.4em;
+	font-weight: bold;
 }
