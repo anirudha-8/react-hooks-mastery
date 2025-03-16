@@ -6,9 +6,9 @@ function App() {
 	const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
 	return (
 		<div className={`${isDarkTheme ? "dark-theme" : "light-theme"}`}>
-			<h1>{isDarkTheme ? "Dark" : "Light"} Theme.</h1>
+			<h1>{isDarkTheme ? "Dark" : "Light"} Theme</h1>
 			<button onClick={toggleTheme}>
-				Change to {isDarkTheme ? "Dark" : "Light"} theme.
+				Change to {isDarkTheme ? "Dark" : "Light"} theme
 			</button>
 		</div>
 	);
