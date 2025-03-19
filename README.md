@@ -30,13 +30,17 @@ Welcome to my **React Hooks Journey** repository! 🚀 This repository documents
 
 - [`useReducer`](./useReducer) – Handle complex state logic as an alternative to `useState`.
 
-- [`useMemo`](./useMemo) – Optimize performance by memoizing values.
-
-- [`useCallback`](./useMemo-useCallback) – Optimize function references to prevent unnecessary re-renders.
-
 - [`useImperativeHandle`](./useImperativeHandle) – Expose methods to parent components.
 
 - [`useId`](./useId) – Generate unique IDs for accessibility and forms.
+
+> NOTE - We were not going to study / discuss about `"useMemo"` and `"useCallback"` as in REACT-19 it can handles this memoization stuff right out of the box
+
+🔰 **JUST TO KNOW ABOUT `useMemo` & `useCallback`**
+
+- [`useMemo`](./useMemo) – Optimize performance by memoizing values.
+
+- [`useCallback`](./useMemo-useCallback) – Optimize function references to prevent unnecessary re-renders.
 
 ### 🔹 React 19 Hooks
 
