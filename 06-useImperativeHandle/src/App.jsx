@@ -1,9 +1,8 @@
-import './App.css'
+import "./App.css";
+import FancyInput from "./components/FancyInput";
 
 function App() {
-  return (
-   
-  )
+	return <FancyInput />;
 }
 
-export default App
+export default App;
