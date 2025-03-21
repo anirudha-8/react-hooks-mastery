@@ -1,13 +1,9 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
-const FancyInput = () => {
+const FancyInput = ({ ref }) => {
 	const [inputValue, setInputValue] = useState("");
 
 	const inputRef = useRef(null);
-
-	useEffect(() => {
-		inputRef.current && inputRef.current.focus();
-	}, []);
 
 	return (
 		<div>
