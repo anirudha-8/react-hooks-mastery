@@ -1,9 +1,18 @@
-import { useRef, useState } from "react";
+import { useImperativeHandle, useRef, useState } from "react";
 
 const FancyInput = ({ ref }) => {
 	const [inputValue, setInputValue] = useState("");
 
 	const inputRef = useRef(null);
+
+	useImperativeHandle(ref, () => ({
+		focus: () => {
+			inputRef.current.focus();
+		},
+		clear: () => {
+			inputRef.current.value = "";
+		},
+	}));
 
 	return (
 		<div>
