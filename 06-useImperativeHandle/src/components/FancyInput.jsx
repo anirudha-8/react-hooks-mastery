@@ -20,7 +20,9 @@ const FancyInput = () => {
 				onChange={(e) => setInputValue(e.target.value)}
 				ref={inputRef}
 			/>
-			<p>You typed = {inputValue}</p>
+			<h1>
+				You typed = <strong>{inputValue}</strong>
+			</h1>
 		</div>
 	);
 };
