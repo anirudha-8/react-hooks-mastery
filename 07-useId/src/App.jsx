@@ -5,6 +5,7 @@ function App() {
 	return (
 		<div>
 			<Checkbox />
+			<Checkbox />
 		</div>
 	);
 }
