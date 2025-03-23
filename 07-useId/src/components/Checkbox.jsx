@@ -1,8 +1,11 @@
+import { useId } from "react";
+
 const Checkbox = () => {
+	const checkBoxId = useId();
 	return (
 		<div>
-			<input type="checkbox" name="check" id="check" />
-			<label htmlFor="check">Terms & Conditions</label>
+			<input type="checkbox" name="check" id={checkBoxId} />
+			<label htmlFor={checkBoxId}>Terms & Conditions</label>
 		</div>
 	);
 };
