@@ -55,7 +55,7 @@ export default App;
 
 ## 🎯 Explanation
 
-- The useId hook generates a unique ID for each Checkbox component instance.
+- The `useId` hook generates a unique ID for each Checkbox component instance.
 
 - The `<label>` element is linked to the `<input>` field using `htmlFor={checkBoxId}`.
 
