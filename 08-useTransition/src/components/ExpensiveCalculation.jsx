@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useState, useTransition } from "react";
 
 const ExpensiveCalculation = () => {
 	const [input, setInput] = useState("");
 
 	const [results, setResults] = useState([]);
+
+	const [isPending, startTransition] = useTransition();
 
 	// ================ Simulate Expensive Calculation ================ //
 	const runExpensiveCalculation = (value) => {
@@ -27,8 +29,10 @@ const ExpensiveCalculation = () => {
 		setInput(newValue);
 
 		// defer the expensive calculation (low-priority)
-		const calculatedResults = runExpensiveCalculation(newValue);
-		setResults(calculatedResults);
+		startTransition(() => {
+			const calculatedResults = runExpensiveCalculation(newValue);
+			setResults(calculatedResults);
+		});
 	};
 
 	return (
@@ -46,13 +50,17 @@ const ExpensiveCalculation = () => {
 			</div>
 			<div>
 				<h2>Results...</h2>
-				<ul>
-					{results.map((result, index) => (
-						<li key={index}>
-							{index * 1000} x {input} = {result}
-						</li>
-					))}
-				</ul>
+				{isPending ? (
+					"Calculating..."
+				) : (
+					<ul>
+						{results.map((result, index) => (
+							<li key={index}>
+								{index * 1000} x {input} = {result}
+							</li>
+						))}
+					</ul>
+				)}
 			</div>
 		</div>
 	);
